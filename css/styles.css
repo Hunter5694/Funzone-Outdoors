@@ -1,0 +1,142 @@
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+		padding: 0;
+		background-color: #ffffff;
+	}
+	/* Global */
+	.container{
+		width: 86%;
+		margin: auto;
+		overflow: hidden;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	.button_1{
+		height: 38px;
+		background: #ff931e;
+	}
+	p div{
+		font-size: 25px;
+	}
+	/* header */
+	header{
+		background: #35424a;
+		color: #ffffff;
+		padding-top: 30px;
+		min-height: 70px;
+		border-bottom: #ff931e 3px solid;
+	}
+	header a{
+		color: #ffffff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+	} 
+	header li{
+		float: left;
+		display: inline;
+		padding: 0 20px 0 20px;
+	}
+	header #branding{
+		float: left;
+	}
+	header #branding h1{
+		margin: 0;
+	}
+	header nav{
+		float: right;
+		margin-top: 10px;
+	}
+	header .highlight, header .current a{
+		color: #ff931e;
+		font-weight: bold;
+	}
+	header a:hover{
+		color: #cccccc;
+		font-weight: bold;
+
+	}
+	/* Showcase */
+	#showcase{
+		min-height: 343px;
+		background: url('../img/showcase.jpg');
+		background-repeat: no-repeat;
+		max-width: 100%;
+		background-size: 543px 256px;
+		text-align: center; 
+	}
+	#showcase h1{
+		margin-top: 250px;
+		font-size: 55px;
+		margin-bottom: 50px;
+		color: #ff931e;
+	}
+	#showcase p{
+		font-size: 25px;
+		color: #35424a;
+	}
+	#newsletter{
+		padding: 15px;
+		color: #ff931e;
+		background: #35424a;
+		border-top: #ff931e 3px solid;
+		border-bottom: #ff931e 3px solid;
+	}
+	#newsletter h1{
+		float: left;
+	}
+	#newsletter form{
+		float: right;
+		margin-top: 15px;
+	}
+	#newsletter input[type="email"]{
+		padding: auto;
+		height: 25px;
+		width: 250px;
+	}
+	/* Boxes */
+	#boxes{
+		margin-top: 20px;
+		text-align: center;
+		font-size: 25px;
+		margin-left: 175px;
+		margin-right: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+	#boxes .box{
+		float: left;
+		max-width: 410px;
+		height: auto;
+		padding: 10px;
+	}
+	#boxes .box img{
+		height: 350px;
+		max-width: 410px;
+	}
+	aside#sidebar{
+		float: right;
+		width: 30%;
+		margin-top: 10px;
+	}
+	article#main-col{
+		float:left;
+		width: 30%;
+	}
+	footer{
+		padding: 20px;
+		margin-top: 20px;
+		color: #ff931e;
+		background-color: #35424a;
+		text-align: center;
+		border-top: #ff931e 3px solid;
+	}
+
+	#faq {
+		font-weight: bold;
+		font-size: 23px;
+	}
