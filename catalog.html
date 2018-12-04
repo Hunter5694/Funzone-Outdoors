@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="Affordable and professional web design">
 		<meta name="keywords" content="funzone, jumpers, funzone outdoors, rentals, party">
 		<meta name="author" content="Hunter Williams">
-		<title>Funzone Outdoors | Catalog</title>
+		<title>Funzone Outdoors | Contact</title>
 		<link rel="stylesheet" href="./css/styles.css">
+		
 	</head>
 	<body>
 		<header>
-			<div class="container">
+		<div class="container">
 				<div id="branding">
 					<h1><span class="highlight">Funzone Outdoors</span> Party Rentals</h1>
 				</div>
@@ -19,65 +21,100 @@
 					<ul>
 						<li><a href="index.html">Home</li></a>
 						<li class="current"><a href="catalog.html">Catalog</li></a>
-						<li><a href="faq.html">FAQ</li></a>	
-						<li><a href="contact.html">Contact</li></a>
 						<li><a href="gallery.html">Gallery</li></a>
+						<li ><a href="contact.html">Contact</li></a>
+						<li><a href="faq.html">FAQ</li></a>
 					</ul>
 				</nav>
 			</div>
-		</header>
-		<section id="boxes">
+		</header> 
+		<h1>Featured Products</h1>
+
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="./img/tropical.jpg" style="height: 280px; width:280px">
+		  <br>	
+		  <div class="text">Tropical WaterSlide</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="./img/regcastle.jpg" style="height: 280px; width:300px">
+		  <br>	
+		  <div class="text">Regular Castle</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="./img/snowcone.jpg" style="height: 258px; width:240px">
+		  <br>
+		  <br>	
+		  <div class="text">Snowcone Machine</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  }
+		</script>
+		<section id="space">
 			<div class="container">
-				<div class="box">
-					<img src="./img/regcastle.jpg">
-					<h1>Bounce Houses</h1>
-					<p>All of our bounce houses and combos</p>
-				</div>
-				<div class="box">
-					<img src="./img/carslide.jpg">
-					<h1>Slides</h1>
-					<p>All of our water and dry slides</p>
-				</div>
-				<div class="box">
-					<img src="./img/tropical.jpg">
-					<h1>Full Catalog</h1>
-					<p>The full list  of our products</p>
-				</div>
+				<h1>Slides</h1>
 			</div>
 		</section>
-		<div class="span9">
-			<div class="well well-small">
-			<h1>Featured Rentals <small class="pull-right"></small></h1>
-				<div class="row-fluid">
-					<div id="featured" class=" carousel slide">
-						<div class="carousel-liner">
-							<div item active>
-								<ul class="thumbnail">
-									<li class="span3">
-										<div class="thumbnail">
-											<i class="tag"></i>
-												<a href="#"><img src="./img/snowcone.jpg"></a>
-													<div>
-														
-													</div>
-												<a href="#"><img src="./img/tropical.jpg"></a>
-												<a href="#"><img src="./img/train.jpg"></a>
-												<a href="#"><img src="./img/regcastle.jpg"></a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div>
-								<ul>	
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+		<img src="./img/tropical.jpg">
+		<img src="./img/carslide.jpg">
+		<img src="./img/tidal.jpg">
+		<section id="space">
+			<div class="container">
+				<h1>Bounce Houses</h1>
 			</div>
-		</div>
-		<footer>
-			<p>Funzone Outdoors, Copyright &copy; 2018</p>
-		</footer>
+		</section>
+		<section id="space">
+			<div class="container">
+				<h1>Other Rentables</h1>
+			</div>
+		</section>
 	</body>
-</html>
+	<footer>
+		<p>Funzone Outdoors, Copyright &copy; 2018</p>
+	</footer>
+</html> 
