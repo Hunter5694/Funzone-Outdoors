@@ -1,3 +1,4 @@
+	/*All picutes are from Funzoneoutdoors.com or ezinflatables*/
 	body{
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15px;
@@ -173,6 +174,11 @@
 		font-size: 25px;
 		color: #ff931e;
 		text-align: center;
+	}
+	.BIG{
+		max-height: 250px;
+		max-width: 250px;
+		display: center;
 	}
 	/*Slideshow*/
 			* {box-sizing: border-box}
