@@ -20,6 +20,7 @@
 		height: 38px;
 		background: #ff931e;
 	}
+	
 	p div{
 		font-size: 25px;
 	}
@@ -99,6 +100,7 @@
 		height: 25px;
 		width: 250px;
 	}
+
 	/* Boxes */
 	#boxes{
 		margin-top: 20px;
@@ -175,10 +177,24 @@
 		color: #ff931e;
 		text-align: center;
 	}
+	h3{
+		font-size: 20px;
+		text-align: center;
+	}
+
 	.BIG{
 		max-height: 250px;
 		max-width: 250px;
 		display: center;
+	}
+	li{
+		font-size: 25px;
+	}
+	div .fake{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 	/*Slideshow*/
 			* {box-sizing: border-box}
@@ -209,7 +225,7 @@
 			  width: auto;
 			  padding: 16px;
 			  margin-top: -22px;
-			  color: white;
+			  color: #35424a;
 			  font-weight: bold;
 			  font-size: 18px;
 			  transition: 0.6s ease;
@@ -221,11 +237,12 @@
 			.next {
 			  right: 0;
 			  border-radius: 3px 0 0 3px;
+			  color: #35424a;
 			}
 
 			/* On hover, add a black background color with a little bit see-through */
 			.prev:hover, .next:hover {
-			  background-color: rgba(0,0,0,0.8);
+			  background-color: #ff931e;
 			}
 
 			/* Caption text */
@@ -263,6 +280,8 @@
 			.active, .dot:hover {
 			  background-color: #717171;
 			}
+
+			
 
 			/* Fading animation */
 			.fade {
