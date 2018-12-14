@@ -325,4 +325,9 @@
 			  .prev, .next,.text {font-size: 11px}
 			}
 
-		
+		#info {
+			text-align: center;
+			text-align-last: center;
+			font-size: 20px;
+			text-indent: 10px;
+		}
