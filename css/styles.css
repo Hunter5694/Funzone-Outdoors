@@ -12,6 +12,15 @@
 		margin: auto;
 		overflow: hidden;
 	}
+	
+	.w3-container{
+		width: 86%;
+		margin: auto;
+		overflow: hidden; 
+	}
+	html, html div, div h2, div h3, body, div, p, h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+	}
 	ul{
 		margin: 0;
 		padding: 0;
@@ -68,7 +77,7 @@
 		background: url('../img/showcase.jpg');
 		background-repeat: no-repeat;
 		max-width: 100%;
-		background-size: 543px 256px;
+		background-size: 410px 206px;
 		text-align: center; 
 	}
 	#showcase h1{
@@ -106,7 +115,7 @@
 		margin-top: 20px;
 		text-align: center;
 		font-size: 25px;
-		margin-left: 175px;
+		margin-left: auto;
 		margin-right: auto;
 		max-width: 100%;
 		max-height: auto;
@@ -117,13 +126,14 @@
 		height: auto;
 		padding: 10px;
 	}
-	#boxes .box img{
+	#boxes img{
 		height: 350px;
 		max-width: 410px;
 	}
 	#boxes .box h1{
 		color: #ff931e;
 	}
+
 	aside#sidebar{
 		float: right;
 		width: 30%;
@@ -314,3 +324,5 @@
 			@media only screen and (max-width: 300px) {
 			  .prev, .next,.text {font-size: 11px}
 			}
+
+		
